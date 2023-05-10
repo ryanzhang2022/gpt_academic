@@ -4,6 +4,7 @@ from toolbox import HotReload  # HotReload 的意思是热更新，修改函数�
 def get_crazy_functions():
     ###################### 第一组插件 ###########################
     from crazy_functions.读文章写摘要 import 读文章写摘要
+    from crazy_functions.读文章写审稿意见 import 读文章写审稿意见
     from crazy_functions.生成函数注释 import 批量生成函数注释
     from crazy_functions.解析项目源代码 import 解析项目本身
     from crazy_functions.解析项目源代码 import 解析一个Python项目
@@ -88,6 +89,10 @@ def get_crazy_functions():
         "读Tex论文写摘要": {
             "Color": "stop",    # 按钮颜色
             "Function": HotReload(读文章写摘要)
+        },
+         "读pdf论文写审稿意见": {
+            "Color": "stop",    # 按钮颜色
+            "Function": HotReload(读文章写审稿意见)
         },
         "Markdown/Readme英译中": {
             # HotReload 的意思是热更新，修改函数插件代码后，不需要重启程序，代码直接生效
